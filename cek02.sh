@@ -62,7 +62,7 @@ function cek_file(){
 		    cat $nama/$path_file
 		elif [ $metode == "eq" ]; then
 		    file_pembanding=$4
-		    python /home/fasilkom/mahasiswa/a/alief.aziz/periksaan/SandBox/asdos/myscript/samagak.py $nama/$path_file eq/$file_pembanding
+		    python samagak.py $nama/$path_file kunci_jawaban/$file_pembanding
 		elif [ $metode == "run" ]; then
 		    ./$nama/$path_file
 		fi
